@@ -1,0 +1,128 @@
+
+body {
+  margin: 0;
+  background-color: #D9D9D9;
+  color: #212121;
+  line-height: 1.5;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.search-form__input {
+  width: 100%;
+  height: 42px;
+  padding-left: 10px;
+  border: 2px solid #FFB800;
+  border-radius: 5px;
+  outline: none;
+  color: #9e9c9c;
+}
+
+.search-form__btn {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 60px;
+  height: 42px;
+  border: none;
+  background: #FFB800;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.photo-card {
+  flex-basis: calc((100% - 90px) / 4);
+  background-color: #EAEAEA;
+  border-radius: 8px;
+  margin: 10px;
+  overflow: hidden;
+  box-shadow: 0px 1px 3px rgba(0,0,0,.12), 0px 1px 1px rgba(0,0,0,.14), 0px 2px 1px rgba(0,0,0,.2);
+}
+
+.photo-card:hover {
+  border: 1px solid #000;
+}
+
+.gallery-img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  color: #000;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.load-more {
+  margin-left: auto;
+  margin-right: auto;
+
+  text-decoration: none;
+  display: block;
+  width: 140px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 5px;
+  
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.load-more:hover {
+  cursor: pointer;
+  background: #FFB800;
+  box-shadow: 0 15px 20px rgba(161, 209, 190, 0.4);
+  color: white;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.gallery-item {
+  text-decoration: none;
+}
